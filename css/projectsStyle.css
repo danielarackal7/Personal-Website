@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover {
+    background-color: #555;
+}
+.container {
+    padding: 20px;
+}
+.projects {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.project {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+.slides img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.slider-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: background-color 0.3s;
+}
+.slider-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.project h3 {
+    margin-top: 24px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+.project p {
+    font-size: 16px;
+    color: #666;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
